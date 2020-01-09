@@ -14,11 +14,7 @@ def sigmoid(z):
     Return:
     s -- sigmoid(x)
     """
-    
-    try:
-        s = [1/(1 + e**(-1*x)) for x in z]
-    except:
-        s = 1/(1 + e**(-1*z))
+    s = 1/(1 + np.exp(-z))
     return s
 
 
